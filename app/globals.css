@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #c9b8fd;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #c5baf4;
+    --foreground: #000000;
   }
 }
 
@@ -24,4 +24,59 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+/* app/globals.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d7bcfa;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.fileInput {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #2b105e;
+  border-radius: 4px;
+}
+
+.uploadButton {
+  background-color: #f0f1f3;
+  color: #0b0b0b;
+  padding: 8px 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.uploadButton:hover {
+  background-color: #e2e7f5;
+}
+
+.error {
+  color: #f87171;
+  margin-top: 16px;
+}
+
+.parsedData {
+  margin-top: 16px;
+}
+
+.parsedData pre {
+  background-color: #f3f4f6;
+  padding: 16px;
+  border-radius: 4px;
 }
